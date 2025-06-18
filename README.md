@@ -1,5 +1,11 @@
 # 🧠 U-Net for Neuron Segmentation in Biomedical Imaging
 
+## 👤 Author
+
+| Name            | Role              | LinkedIn                                      |
+|-----------------|-------------------|-----------------------------------------------|
+| Jason Emmanuel  | AI Engineer    | [linkedin.com/in/jasoneml](https://www.linkedin.com/in/jasoneml/) |
+
 This project implements a U-Net architecture using PyTorch to perform semantic segmentation of neurons in electron microscopy (EM) images. The primary objective is to accurately identify and classify pixels that correspond to neural structures within high-resolution biomedical images.
 
 Segmenting neurons from EM data is a fundamental task in biomedical image analysis, particularly in connectomics,a field focused on reconstructing and understanding the structure and function of complex neural circuits. Traditional image processing methods often struggle with the dense textures, subtle gradients, and irregular boundaries that characterize EM images. In contrast, deep learning, and specifically convolutional neural networks (CNNs), have demonstrated superior performance by learning hierarchical and robust feature representations directly from raw image data.
