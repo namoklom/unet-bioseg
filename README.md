@@ -27,17 +27,6 @@ Beyond demonstrating a working implementation of U-Net in PyTorch, this project 
 
 ---
 
-## 📚 Learning Objectives
-
-By working through this project, you will:
-
-- Learn how U-Net functions and how it is implemented from scratch.
-- Understand image segmentation techniques using supervised learning.
-- Gain hands-on experience with biomedical image datasets.
-- Practice PyTorch module design and model training workflows.
-
----
-
 ## 📊 Dataset
 
 The dataset consists of:
