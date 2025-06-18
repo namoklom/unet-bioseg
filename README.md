@@ -77,8 +77,6 @@ Performs upsampling with:
 
 ## 🧱 Model Architecture: U-Net
 Input Image ──► FeatureMapBlock ──► ContractingBlock x4 ──► ExpandingBlock x4 ──► FeatureMapBlock ──► Output Mask
-↓ skip connect ↓ encoder path ↑ decoder path ↑
-downsampled features upsampled features
 
 Each downsampling step halves the spatial size and doubles the number of channels. Each upsampling step reverses that.
 
