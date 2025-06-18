@@ -82,6 +82,36 @@ Each downsampling step halves the spatial size and doubles the number of channel
 
 ---
 
+## 🧪 Results: Progressive Improvement in Neuron Segmentation Using U-Net
+
+The following figure illustrates the improvement in segmentation quality over the course of training the U-Net model for neuron segmentation on electron microscopy (EM) images.
+
+![Screenshot 2025-06-18 172514](https://github.com/user-attachments/assets/5cce1f14-2119-40a6-bfe0-72a6acc7f491)
+![Screenshot 2025-06-18 172514](https://github.com/user-attachments/assets/5cce1f14-2119-40a6-bfe0-72a6acc7f491)
+
+
+### 🔍 Image Description
+
+This figure compares segmentation results at two distinct points in the training process:
+
+- **Left Panel: Early Stage (Epoch 10, Step 80)**
+  - **Loss**: `0.3461`
+  - **Top Row**: Raw EM input images.
+  - **Middle Row**: Predicted segmentation masks by the U-Net model.
+  - **Bottom Row**: Overlay of EM images and predicted contours.
+  - At this early stage, the model struggles to identify neuron boundaries clearly, showing noisy predictions and incomplete structures.
+
+- **Right Panel: Late Stage (Epoch 197, Step 1580)**
+  - **Loss**: `0.0480`
+  - **Top Row**: EM input images.
+  - **Middle Row**: Final predicted segmentation masks.
+  - **Bottom Row**: Overlay of EM images and refined contours.
+  - The predictions are significantly cleaner and more accurate, with well-defined boundaries and fewer artifacts, reflecting the model’s improved understanding of the neuron morphology.
+
+This result demonstrates that U-Net effectively learns to delineate neural structures as training progresses, confirming its suitability for dense biomedical image segmentation tasks.
+
+---
+
 ## 🧰 Tools and Libraries
 
 | Library/Tool         | Description                                                                 |
