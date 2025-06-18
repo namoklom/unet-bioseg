@@ -88,8 +88,6 @@ The following figure illustrates the improvement in segmentation quality over th
 
 ![Screenshot 2025-06-18 172514](https://github.com/user-attachments/assets/5cce1f14-2119-40a6-bfe0-72a6acc7f491)
 
-### 🔍 Image Description
-
 This figure compares segmentation results at two distinct points in the training process:
 
 - **Left Panel: Early Stage (Epoch 10, Step 80)**
