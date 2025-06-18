@@ -1,4 +1,4 @@
-# 🧠 U-Net for Neuron Segmentation in Biomedical Imaging
+# U-Net for Neuron Segmentation in Biomedical Imaging
 
 ## 👤 Author
 
