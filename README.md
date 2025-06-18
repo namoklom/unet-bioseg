@@ -1,6 +1,8 @@
 # 🧠 U-Net for Neuron Segmentation in Biomedical Imaging
 
-This project implements a **U-Net** architecture using PyTorch to perform **semantic segmentation** of neurons in electron microscopy (EM) images. U-Net is a type of convolutional neural network (CNN) that has proven highly effective in biomedical image segmentation tasks.
+This project implements a U-Net architecture using PyTorch to perform semantic segmentation of neurons in electron microscopy images. The primary objective is to accurately identify and classify pixels that correspond to neural structures within high-resolution biomedical images. Segmenting neurons from electron microscopy data is a fundamental task in biomedical image analysis, especially in fields such as connectomics, where researchers aim to reconstruct and understand the structure and function of complex neural circuits. Traditional image processing methods often struggle with the dense textures, subtle gradients, and irregular boundaries present in these types of images. Deep learning, and particularly convolutional neural networks, have demonstrated superior performance by learning robust and hierarchical feature representations directly from raw image data.
+
+U-Net, the architecture used in this project, was originally proposed in 2015 by Olaf Ronneberger and colleagues. It has become one of the most popular models for biomedical image segmentation due to its unique structure that combines both an encoder and a decoder path. The encoder captures context and abstract features by progressively downsampling the input, while the decoder reconstructs the spatial dimensions and fine details through upsampling. Crucially, U-Net employs skip connections that link corresponding layers in the encoder and decoder paths, allowing fine-grained features to flow directly to the reconstruction layers. This design helps the network preserve spatial information and improves its ability to localize objects with precision. In this project, the U-Net is trained on a set of grayscale volumetric EM images, with corresponding ground truth labels that indicate neuron regions at the pixel level. The model learns to generate probability masks that highlight neural structures, which can then be thresholded or further processed for downstream analysis. This project not only demonstrates how to implement and train U-Net from scratch using PyTorch, but also serves as a valuable foundation for more advanced research in medical image analysis, generative modeling, and computer vision in scientific domains.
 
 ---
 
@@ -76,19 +78,22 @@ Each downsampling step halves the spatial size and doubles the number of channel
 
 ---
 
-## 🏁 Getting Started
+## 🧰 Tools and Libraries
 
-### ▶️ Requirements
+| Library/Tool         | Description                                                                 |
+|----------------------|-----------------------------------------------------------------------------|
+| **PyTorch**           | Deep learning framework used to build and train the U-Net model            |
+| **torchvision**       | Utilities for image transformation and visualization                       |
+| **tqdm**              | Provides progress bars for training loops                                  |
+| **matplotlib**        | Used for visualizing images and model predictions                          |
+| **imageio (v3)**      | Reads TIFF format EM images used as input data                             |
+| **scikit-image (skimage)** | Image processing library used for reading and cropping images           |
+| **NumPy**             | Supports numerical operations and tensor manipulation                      |
+| **Google Colab / CUDA** | Hardware acceleration (optional) for training models with GPU support     |
 
-- Python 3.8+
-- PyTorch
-- NumPy
-- matplotlib
-- tqdm
-- imageio
-- scikit-image
+---
 
-### 📦 Install Dependencies
+## 📦 Install Dependencies
 
 ```bash
 pip install torch torchvision numpy matplotlib imageio scikit-image tqdm
