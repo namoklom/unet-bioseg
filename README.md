@@ -82,7 +82,7 @@ Each downsampling step halves the spatial size and doubles the number of channel
 
 ---
 
-## 🧪 Results: Progressive Improvement in Neuron Segmentation Using U-Net
+## 🧪 Results
 
 The following figure illustrates the improvement in segmentation quality over the course of training the U-Net model for neuron segmentation on electron microscopy (EM) images.
 
